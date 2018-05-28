@@ -3,7 +3,7 @@ public class Main {
 
     
     public static void main(String[] args) {
-        Car myCar = new Car();
+        // Car myCar = new Car();
         //double distance = myCar.maxDistance();
        // System.out.println("Max distance: " + distance);
         //myCar.changeLicence("LK356");
@@ -11,7 +11,7 @@ public class Main {
        // myCar.printAttributes();
        
         
-        Car audi = new Car("Audi", 50, 2);
+        Car audi = new Car("Audi", 50, 2, 5, 1);
         audi.printAttributes();
        // System.out.println("Max distance: " + audi.maxDistance());
         audi.fuelUp();
@@ -23,6 +23,28 @@ public class Main {
         audi.travel(30);
         audi.printAttributes();
         
+        audi.getIn();
+      
+        Car noviAuto = new Car("Novi Auto", 100, 3, 5, 1);
+         noviAuto.printAttributes();
+         
+         noviAuto.getIn();
+         noviAuto.printAttributes();
+         noviAuto.getIn();
+         noviAuto.getIn();
+         noviAuto.getIn();
+         noviAuto.getIn();
+         noviAuto.getIn();
+         noviAuto.printAttributes();
+         
+         noviAuto.getOut();
+         noviAuto.printAttributes();
+         noviAuto.getOut();
+         noviAuto.getOut();
+         noviAuto.getOut();
+         noviAuto.getOut();
+         noviAuto.getOut();
+         noviAuto.printAttributes();
     }
     
 }
