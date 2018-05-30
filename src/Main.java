@@ -1,4 +1,7 @@
 
+import loops.Loops;
+
+
 public class Main {
 
     
@@ -40,11 +43,36 @@ public class Main {
          noviAuto.getOut();
          noviAuto.printAttributes();
          noviAuto.getOut();
-         noviAuto.getOut();
-         noviAuto.getOut();
-         noviAuto.getOut();
-         noviAuto.getOut();
+       
          noviAuto.printAttributes();
+         
+         noviAuto.getIn(2);
+         noviAuto.getOut(2);
+         
+//         int x = 5;
+////         while(x>0) {
+////             System.out.println(x);
+////             x = x-1; // x--;
+////         }
+//         
+////         do {
+////             System.out.println(x);
+////             x--;
+////         } while(x>0);
+////         
+//         for(int i = 7; i < 15; i++) {
+//             System.out.println(i);
+//         }
+
+//           Loops loop1 = new Loops();
+//           loop1.testWhileLoop();
+
+//        Loops.testWhileLoop();
+//        Loops.testForLoop();
+          // Loops.printMultiplicationTable();
+           Loops.printCoordinates();
+           System.out.print("test1");
+           System.out.println("test2");
     }
     
 }

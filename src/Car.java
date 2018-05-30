@@ -10,7 +10,7 @@ public class Car {
     int consumption; //consumption per distance unit km
     int mileage = 0; //predjeni put
     
-    int numberOfPassengers;
+    int maxPassengers;
     int currentNumberOfPassengers;
     
     
@@ -18,7 +18,7 @@ public class Car {
        this.model = "default";
        this.maxFuel = 100;
        this.consumption = 5;
-       this.numberOfPassengers = 5;
+       this.maxPassengers = 5;
        this.currentNumberOfPassengers = 1;
     }
     
@@ -33,7 +33,7 @@ public class Car {
        this.maxFuel = customMaxFuel;
        this.consumption = customConsumption;
        this.currentNumberOfPassengers = currPass;
-       this.numberOfPassengers = maxPass;
+       this.maxPassengers = maxPass;
     }
     
     public void printAttributes() {
@@ -43,7 +43,7 @@ public class Car {
         System.out.println("Licence: " + this.license);
         System.out.println("State of fuel: " + this.curentFuel);
         System.out.println("Total mileage: " + this.mileage);
-        System.out.println("Current number of passengers is: " + this.currentNumberOfPassengers + " of maximum: " + this.numberOfPassengers);
+        System.out.println("Current number of passengers is: " + this.currentNumberOfPassengers + " of maximum: " + this.maxPassengers);
         System.out.println();
     }
     
@@ -84,7 +84,7 @@ public class Car {
     }
     
     public void getIn() {
-        if (this.currentNumberOfPassengers < this.numberOfPassengers) {
+        if (this.currentNumberOfPassengers < this.maxPassengers) {
       this.currentNumberOfPassengers = this.currentNumberOfPassengers + 1;
       // this.currentNumberOfPassengers++; isto sto i ovo gore
         System.out.println("Someone got in. Current number: " + this.currentNumberOfPassengers);
@@ -93,13 +93,31 @@ public class Car {
         }
 }
     
+    public void getIn(int numberOfPassengers) {
+        if (this.currentNumberOfPassengers + numberOfPassengers <= this.maxPassengers){
+            this.currentNumberOfPassengers = this.currentNumberOfPassengers + numberOfPassengers;
+            System.out.println( numberOfPassengers + " passengers got in. Current number: " + this.currentNumberOfPassengers);
+       } else {
+        System.out.println("There is no enough space for " + numberOfPassengers + " passengers.\n");
+       }
+    }
+    
     public void getOut() {
         if (this.currentNumberOfPassengers > 0) {
         this.currentNumberOfPassengers = this.currentNumberOfPassengers - 1;
         //this.currentNumberOfPassengers--; isto sto i ovo gore
         System.out.println("Someone got out. Current number: " + this.currentNumberOfPassengers);
         } else {
-            System.out.println("There is no passenger in the car");
+            System.out.println("There is no passenger in the car. \n");
+        }
+    }
+    
+    public void getOut(int numberOfPassengers) {
+        if (this.currentNumberOfPassengers >= numberOfPassengers) {
+        this.currentNumberOfPassengers = this.currentNumberOfPassengers - numberOfPassengers;
+        System.out.println( numberOfPassengers + " passengers got out. Current number: " + this.currentNumberOfPassengers);
+        } else {
+            System.out.println("There are no " + numberOfPassengers + " passengers in the car.\n");
         }
     }
     
