@@ -24,20 +24,22 @@ public class Student extends Person {
          
   }
   
-   public void setIndexNumber(String indexNumber) {
-        this.indexNumber = indexNumber;
-    }
-    
+      
     public String getIndexNumber() {
         return this.indexNumber;
     }
     
-   public void setYear(int year) {
-        this.year = year;
+   public void setIndexNumber(String indexNumber) {
+        this.indexNumber = indexNumber;
     }
     
+
     public int getYear() {
         return this.year;
     } 
     
+   public void setYear(int year) {
+        this.year = year;
+    }
+
 }
