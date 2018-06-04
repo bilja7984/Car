@@ -9,7 +9,7 @@ public class Person {
     public Person() {
         this.name = "Biljana";
         this.surname = "Piscevic";
-        this.jmbg = "0709984715012";
+        this.jmbg = "0709984715000";
     }
     
     public Person(String name, String surname, String jmbg) {
@@ -46,6 +46,7 @@ public class Person {
     public void showData(){
         System.out.println("Person name is " + getName());
         System.out.println("Person surname is " + getSurname());
-        System.out.println("Person jmbg is " + getJmbg());   
+        System.out.println("Person jmbg is " + getJmbg());
+        System.out.println();
     }
 }
