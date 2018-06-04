@@ -1,5 +1,6 @@
 
 import loops.Loops;
+import person.Person;
 
 
 public class Main {
@@ -14,40 +15,40 @@ public class Main {
        // myCar.printAttributes();
        
         
-        Car audi = new Car("Audi", 50, 2, 5, 1);
-        audi.printAttributes();
-       // System.out.println("Max distance: " + audi.maxDistance());
-        audi.fuelUp();
-        audi.printAttributes();
-        audi.travel(20);
-       // audi.changeLicence("PO265");
-        //audi.chageWeight(1089); 
-        audi.printAttributes();
-        audi.travel(30);
-        audi.printAttributes();
-        
-        audi.getIn();
-      
-        Car noviAuto = new Car("Novi Auto", 100, 3, 5, 1);
-         noviAuto.printAttributes();
-         
-         noviAuto.getIn();
-         noviAuto.printAttributes();
-         noviAuto.getIn();
-         noviAuto.getIn();
-         noviAuto.getIn();
-         noviAuto.getIn();
-         noviAuto.getIn();
-         noviAuto.printAttributes();
-         
-         noviAuto.getOut();
-         noviAuto.printAttributes();
-         noviAuto.getOut();
-       
-         noviAuto.printAttributes();
-         
-         noviAuto.getIn(2);
-         noviAuto.getOut(2);
+//        Car audi = new Car("Audi", 50, 2, 5, 1);
+//        audi.printAttributes();
+//       // System.out.println("Max distance: " + audi.maxDistance());
+//        audi.fuelUp();
+//        audi.printAttributes();
+//        audi.travel(20);
+//       // audi.changeLicence("PO265");
+//        //audi.chageWeight(1089); 
+//        audi.printAttributes();
+//        audi.travel(30);
+//        audi.printAttributes();
+//        
+//        audi.getIn();
+//      
+//        Car noviAuto = new Car("Novi Auto", 100, 3, 5, 1);
+//         noviAuto.printAttributes();
+//         
+//         noviAuto.getIn();
+//         noviAuto.printAttributes();
+//         noviAuto.getIn();
+//         noviAuto.getIn();
+//         noviAuto.getIn();
+//         noviAuto.getIn();
+//         noviAuto.getIn();
+//         noviAuto.printAttributes();
+//         
+//         noviAuto.getOut();
+//         noviAuto.printAttributes();
+//         noviAuto.getOut();
+//       
+//         noviAuto.printAttributes();
+//         
+//         noviAuto.getIn(2);
+//         noviAuto.getOut(2);
          
 //         int x = 5;
 ////         while(x>0) {
@@ -70,9 +71,17 @@ public class Main {
 //        Loops.testWhileLoop();
 //        Loops.testForLoop();
           // Loops.printMultiplicationTable();
-           Loops.printCoordinates();
-           System.out.print("test1");
-           System.out.println("test2");
+//           Loops.printCoordinates();
+//           System.out.print("test1");
+//           System.out.println("test2");
+           
+          Person osoba = new Person();
+          osoba.showData();
+          
+          osoba.setName("Milomir");
+          osoba.setSurname("Dragovic");
+          osoba.showData();
+           
     }
     
 }
